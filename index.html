@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="De Krayong — Authentic Malaysian flavours with Western delights. Affordable dining in Jasin, Melaka. Lamb chop, chicken chop, spaghetti, and more."
+    />
+    <meta
+      name="keywords"
+      content="De Krayong, Jasin restaurant, Malaysian food, Western food, lamb chop, chicken chop, Melaka"
+    />
+    <meta name="author" content="De Krayong" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="De Krayong — Authentic Malaysian Flavours with Western Delights"
+    />
+    <meta
+      property="og:description"
+      content="Cozy warung-style restaurant in Jasin, Melaka. Serving local favourites and Western dishes from RM1–RM20."
+    />
+    <meta property="og:type" content="restaurant" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200"
+    />
+    <meta property="og:locale" content="en_MY" />
+
+    <title>
+      De Krayong — Authentic Malaysian Flavours with Western Delights
+    </title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽</text></svg>"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ====== Loading Screen ====== -->
+    <div class="loader" id="loader">
+      <div class="loader-content">
+        <div class="loader-logo">De Krayong</div>
+        <div class="loader-spinner"></div>
+      </div>
+    </div>
+
+    <!-- ====== Navigation ====== -->
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <a href="#home" class="nav-logo">
+          <span class="logo-accent">De</span> Krayong
+        </a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="tel:+60167679896" class="nav-cta">Order Now</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ====== Hero Section ====== -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <img
+          src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1600&q=80"
+          alt="Warm restaurant ambience with beautiful food"
+          loading="eager"
+        />
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <div class="hero-badges reveal-hero">
+          <span class="badge badge-rating"
+            ><i class="fas fa-star"></i> 4.4 / 5</span
+          >
+          <span class="badge badge-price">RM1 – RM20</span>
+        </div>
+        <h1 class="hero-title reveal-hero">De Krayong</h1>
+        <p class="hero-tagline reveal-hero">
+          Authentic Malaysian Flavours with Western Delights
+        </p>
+        <div class="hero-buttons reveal-hero">
+          <a href="#menu" class="btn btn-primary"
+            ><i class="fas fa-utensils"></i> View Menu</a
+          >
+          <a href="#contact" class="btn btn-outline"
+            ><i class="fas fa-phone"></i> Contact Us</a
+          >
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ====== About Section ====== -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image reveal">
+            <img
+              src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800&q=80"
+              alt="Cozy restaurant interior"
+              loading="lazy"
+            />
+            <div class="about-image-frame"></div>
+            <!-- Experience badge -->
+            <div class="about-badge glass">
+              <span class="about-badge-number">4.4</span>
+              <span class="about-badge-text">Google Rating</span>
+              <div class="about-badge-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div class="about-text">
+            <p class="section-label reveal">Our Story</p>
+            <h2 class="section-title reveal">Welcome to<br />De Krayong</h2>
+            <div class="section-divider reveal"></div>
+            <p class="reveal">
+              De Krayong is a cosy warung-style restaurant nestled in Kampung
+              Jasin Hilir, serving a delightful mix of authentic Malaysian
+              dishes alongside popular Western favourites. From sizzling lamb
+              chop to classic nasi goreng, there's something for everyone.
+            </p>
+            <p class="reveal">
+              Known as a local favourite in Jasin, our restaurant prides itself
+              on affordable prices, generous portions, and a friendly atmosphere
+              that keeps families and friends coming back.
+            </p>
+
+            <div class="about-features">
+              <div class="about-feature reveal">
+                <div class="about-feature-icon">
+                  <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div>
+                  <strong>Affordable</strong>
+                  <span>RM1–RM20 per person</span>
+                </div>
+              </div>
+              <div class="about-feature reveal">
+                <div class="about-feature-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div>
+                  <strong>Family Friendly</strong>
+                  <span>Warm & welcoming</span>
+                </div>
+              </div>
+              <div class="about-feature reveal">
+                <div class="about-feature-icon">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div>
+                  <strong>Fast Service</strong>
+                  <span>Quick & efficient</span>
+                </div>
+              </div>
+              <div class="about-feature reveal">
+                <div class="about-feature-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div>
+                  <strong>Local Favourite</strong>
+                  <span>100+ reviews</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Menu Section ====== -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label reveal">Our Specialities</p>
+          <h2 class="section-title reveal">Featured Menu</h2>
+          <div class="section-divider reveal"></div>
+          <p class="section-subtitle reveal">
+            A blend of Malaysian classics and Western favourites, prepared fresh
+            daily.
+          </p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card reveal">
+            <div class="menu-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=600&q=80"
+                alt="Lamb chop with black pepper sauce"
+                loading="lazy"
+              />
+              <span class="menu-tag">Popular</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Lamb Chop</h3>
+              <p>
+                Juicy grilled lamb served with generous black pepper sauce,
+                fries, and fresh salad.
+              </p>
+              <div class="menu-card-footer">
+                <span class="menu-price">RM 18.00</span>
+                <span class="menu-category"
+                  ><i class="fas fa-fire"></i> Bestseller</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal">
+            <div class="menu-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=600&q=80"
+                alt="Crispy chicken chop with fries"
+                loading="lazy"
+              />
+              <span class="menu-tag">Popular</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Chicken Chop</h3>
+              <p>
+                Crispy golden chicken served with fries, coleslaw, and your
+                choice of sauce.
+              </p>
+              <div class="menu-card-footer">
+                <span class="menu-price">RM 12.00</span>
+                <span class="menu-category"
+                  ><i class="fas fa-fire"></i> Bestseller</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal">
+            <div class="menu-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=600&q=80"
+                alt="Spaghetti carbonara"
+                loading="lazy"
+              />
+            </div>
+            <div class="menu-card-body">
+              <h3>Spaghetti Carbonara</h3>
+              <p>
+                Creamy Italian-style pasta with rich egg sauce, crispy bacon,
+                and parmesan.
+              </p>
+              <div class="menu-card-footer">
+                <span class="menu-price">RM 10.00</span>
+                <span class="menu-category"
+                  ><i class="fas fa-leaf"></i> Western</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal">
+            <div class="menu-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1622973536968-3ead9e780960?w=600&q=80"
+                alt="Spaghetti bolognese"
+                loading="lazy"
+              />
+            </div>
+            <div class="menu-card-body">
+              <h3>Spaghetti Bolognese</h3>
+              <p>
+                Classic pasta topped with rich, slow-simmered meat sauce and
+                herbs.
+              </p>
+              <div class="menu-card-footer">
+                <span class="menu-price">RM 10.00</span>
+                <span class="menu-category"
+                  ><i class="fas fa-leaf"></i> Western</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal">
+            <div class="menu-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=600&q=80"
+                alt="Spaghetti marinara with seafood"
+                loading="lazy"
+              />
+            </div>
+            <div class="menu-card-body">
+              <h3>Spaghetti Marinara</h3>
+              <p>
+                Flavourful seafood tomato pasta with prawns, squid, and fresh
+                basil.
+              </p>
+              <div class="menu-card-footer">
+                <span class="menu-price">RM 12.00</span>
+                <span class="menu-category"
+                  ><i class="fas fa-fish"></i> Seafood</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal">
+            <div class="menu-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&q=80"
+                alt="Malaysian fried rice"
+                loading="lazy"
+              />
+            </div>
+            <div class="menu-card-body">
+              <h3>Fried Rice</h3>
+              <p>
+                Aromatic Malaysian-style wok-fried rice with egg, vegetables,
+                and sambal.
+              </p>
+              <div class="menu-card-footer">
+                <span class="menu-price">RM 7.00</span>
+                <span class="menu-category"
+                  ><i class="fas fa-pepper-hot"></i> Local</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Why Choose Us ====== -->
+    <section class="why-us" id="why-us">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label reveal">Our Promise</p>
+          <h2 class="section-title reveal">Why Choose Us</h2>
+          <div class="section-divider reveal"></div>
+        </div>
+        <div class="counters-grid">
+          <div class="counter-card reveal">
+            <div class="counter-icon"><i class="fas fa-dollar-sign"></i></div>
+            <div class="counter-number" data-target="20">0</div>
+            <p class="counter-label">Menu Items Under RM20</p>
+            <span class="counter-desc">Affordable for everyone</span>
+          </div>
+          <div class="counter-card reveal">
+            <div class="counter-icon"><i class="fas fa-rocket"></i></div>
+            <div class="counter-number" data-target="15">0</div>
+            <p class="counter-label">Minutes Average Serve</p>
+            <span class="counter-desc">Quick & efficient service</span>
+          </div>
+          <div class="counter-card reveal">
+            <div class="counter-icon"><i class="fas fa-utensils"></i></div>
+            <div class="counter-number" data-target="50">0</div>
+            <p class="counter-label">Delicious Dishes</p>
+            <span class="counter-desc">Local & Western options</span>
+          </div>
+          <div class="counter-card reveal">
+            <div class="counter-icon"><i class="fas fa-heart"></i></div>
+            <div class="counter-number" data-target="100">0</div>
+            <p class="counter-label">Happy Reviews</p>
+            <span class="counter-desc">A local favourite</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Gallery Section ====== -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label reveal">A Glimpse Inside</p>
+          <h2 class="section-title reveal">Our Gallery</h2>
+          <div class="section-divider reveal"></div>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-tall reveal">
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
+              alt="Restaurant dining area"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div class="gallery-item reveal">
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80"
+              alt="Beautifully plated food"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div class="gallery-item reveal">
+            <img
+              src="https://images.unsplash.com/photo-1529563021893-cc83c992d75d?w=600&q=80"
+              alt="Grilled satay skewers"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div class="gallery-item gallery-wide reveal">
+            <img
+              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1000&q=80"
+              alt="Warm restaurant interior"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div class="gallery-item reveal">
+            <img
+              src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&q=80"
+              alt="Close-up of grilled dish"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div class="gallery-item gallery-tall reveal">
+            <img
+              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80"
+              alt="Fresh food presentation"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div class="gallery-item reveal">
+            <img
+              src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80"
+              alt="Grilled meat close-up"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div class="gallery-item reveal">
+            <img
+              src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80"
+              alt="Colorful food plating"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-label="Image viewer"
+      aria-hidden="true"
+    >
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+        &times;
+      </button>
+      <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">
+        &#10094;
+      </button>
+      <button class="lightbox-next" id="lightboxNext" aria-label="Next">
+        &#10095;
+      </button>
+      <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+      <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+
+    <!-- ====== Reviews Section ====== -->
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label reveal">Testimonials</p>
+          <h2 class="section-title reveal">What People Say</h2>
+          <div class="section-divider reveal"></div>
+        </div>
+
+        <div class="reviews-slider" id="reviewsSlider">
+          <div class="reviews-track" id="reviewsTrack">
+            <div class="review-card">
+              <div class="review-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="review-text">
+                "The lamb chop here is absolutely amazing! Generous portion with
+                thick black pepper sauce. Definitely worth every ringgit. Will
+                come back again!"
+              </p>
+              <div class="review-author">
+                <div class="review-avatar">F</div>
+                <div>
+                  <strong>Faizal Rahman</strong>
+                  <span>Google Review</span>
+                </div>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="review-text">
+                "Best chicken chop in Jasin! Crispy outside, juicy inside. The
+                price is very affordable too. My kids love the spaghetti
+                carbonara here."
+              </p>
+              <div class="review-author">
+                <div class="review-avatar">N</div>
+                <div>
+                  <strong>Nurul Huda</strong>
+                  <span>Google Review</span>
+                </div>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="review-text">
+                "Fast service and delicious food! The fried rice is really
+                sedap. Cozy atmosphere, feels like eating at a friend's place.
+                Only downside is limited parking."
+              </p>
+              <div class="review-author">
+                <div class="review-avatar">A</div>
+                <div>
+                  <strong>Ahmad Zikri</strong>
+                  <span>Google Review</span>
+                </div>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="review-text">
+                "Affordable Western food in Jasin — finally! Spaghetti bolognese
+                was rich and flavourful. Generous portions for the price. Highly
+                recommended."
+              </p>
+              <div class="review-author">
+                <div class="review-avatar">S</div>
+                <div>
+                  <strong>Syafiqah Amin</strong>
+                  <span>Google Review</span>
+                </div>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="review-text">
+                "Brought my whole family here. Everyone loved it! From kids to
+                grandparents — there's something for everyone. The warung vibe
+                is very relaxing."
+              </p>
+              <div class="review-author">
+                <div class="review-avatar">H</div>
+                <div>
+                  <strong>Hakim Johari</strong>
+                  <span>Google Review</span>
+                </div>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="far fa-star"></i>
+              </div>
+              <p class="review-text">
+                "The marinara spaghetti was really good — seafood was fresh!
+                Only giving 4 stars because parking space is a bit tight. Food
+                and service are top notch though."
+              </p>
+              <div class="review-author">
+                <div class="review-avatar">L</div>
+                <div>
+                  <strong>Lee Wei Jian</strong>
+                  <span>Google Review</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-controls">
+            <button
+              class="slider-btn"
+              id="sliderPrev"
+              aria-label="Previous review"
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="slider-dots" id="sliderDots"></div>
+            <button class="slider-btn" id="sliderNext" aria-label="Next review">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Contact Section ====== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label reveal">Find Us</p>
+          <h2 class="section-title reveal">Visit De Krayong</h2>
+          <div class="section-divider reveal"></div>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="contact-card glass">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h3>Address</h3>
+                  <p>
+                    Jalan Jasin Hilir,<br />Kampung Jasin Hilir,<br />77000
+                    Jasin, Melaka
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                <div>
+                  <h3>Phone</h3>
+                  <p><a href="tel:+60167679896">016-767 9896</a></p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                <div>
+                  <h3>Opening Hours</h3>
+                  <p>Daily from 4:30 PM<br />Until late evening</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-concierge-bell"></i>
+                </div>
+                <div>
+                  <h3>Services</h3>
+                  <p>
+                    <span class="service-tag"
+                      ><i class="fas fa-check"></i> Dine In</span
+                    >
+                    <span class="service-tag"
+                      ><i class="fas fa-check"></i> Takeaway</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="contact-buttons">
+                <a href="tel:+60167679896" class="btn btn-primary"
+                  ><i class="fas fa-phone"></i> Call Now</a
+                >
+                <a
+                  href="https://maps.google.com/?q=Kampung+Jasin+Hilir+77000+Jasin+Melaka"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fas fa-directions"></i> Get Directions</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="contact-map reveal">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7970.0!2d102.43!3d2.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sKampung+Jasin+Hilir!5e0!3m2!1sen!2smy!4v1700000000000"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="De Krayong location on Google Maps"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Footer ====== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="footer-logo"
+              ><span class="logo-accent">De</span> Krayong</a
+            >
+            <p>
+              Authentic Malaysian flavours with Western delights. Your favourite
+              warung in Jasin.
+            </p>
+            <div class="footer-socials">
+              <a href="#" aria-label="Facebook" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Instagram" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="TikTok" class="social-link"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+              <a
+                href="https://wa.me/60167679896"
+                aria-label="WhatsApp"
+                class="social-link"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#reviews">Reviews</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-hours">
+            <h4>Opening Hours</h4>
+            <ul>
+              <li><span>Monday</span><span>4:30 PM – Late</span></li>
+              <li><span>Tuesday</span><span>4:30 PM – Late</span></li>
+              <li><span>Wednesday</span><span>4:30 PM – Late</span></li>
+              <li><span>Thursday</span><span>4:30 PM – Late</span></li>
+              <li><span>Friday</span><span>4:30 PM – Late</span></li>
+              <li><span>Saturday</span><span>4:30 PM – Late</span></li>
+              <li><span>Sunday</span><span>4:30 PM – Late</span></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Jalan Jasin Hilir, Kampung
+              Jasin Hilir, 77000 Jasin, Melaka
+            </p>
+            <p>
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+60167679896">016-767 9896</a>
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 De Krayong. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
