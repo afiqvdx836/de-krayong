@@ -234,7 +234,7 @@
      Testimonial Slider
      ============================ */
   const reviewCards = reviewsTrack.querySelectorAll(".review-card");
-  let slidesPerView = 3;
+  let slidesPerView = 1;
   let slideIndex = 0;
 
   function getVisibleSlides() {
@@ -261,10 +261,13 @@
     const totalDots = Math.ceil(reviewCards.length / slidesPerView);
     slideIndex = Math.max(0, Math.min(index, totalDots - 1));
 
-    const cardWidth = reviewCards[0].offsetWidth + 18; /* card + gap */
+    const cardWidth = reviewCards[0].offsetWidth + (parseFloat(getComputedStyle(reviewsTrack).gap) || 0);
+    console.log("review card offset width:", reviewCards[0].offsetWidth)
+    console.log("review track", (parseFloat(getComputedStyle(reviewsTrack).gap)))
+    console.log("card width:", cardWidth)
     const offset = slideIndex * slidesPerView * cardWidth;
     reviewsTrack.style.transform = "translateX(-" + offset + "px)";
-
+  
     sliderDotsContainer.querySelectorAll(".slider-dot").forEach((dot, i) => {
       dot.classList.toggle("active", i === slideIndex);
     });
